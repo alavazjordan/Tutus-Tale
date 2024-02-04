@@ -1,0 +1,26 @@
+1. Set up Main and MyPanel
+
+2. Set up the screen and resolution
+
+3. Set up the time/fps/THREAD
+	* Initialize the thread
+	* implement Runnable to the class
+	* add the run() method
+	* instantiate game thread in the startGameThread() method
+
+4. Set up the GameLoop(the core of the game)
+	* Update create method update()
+	* Draw  create method paintComponent()
+	
+5. Set up keyboard input
+   	* create KeyHandler class and implement KeyListener
+   	* implement methods
+   	* set up keypressed and keyreleased methods
+   		* do if statements to check which key pressed and released
+   	*create booleans for which key was pressed ex: upPressed
+   	*instantiate keyHandler in mypanel
+   	*add it to the mypanel ex: this.addKeyListener(keyH);
+   	*add this.setFocusable
+   	
+6.
+	
