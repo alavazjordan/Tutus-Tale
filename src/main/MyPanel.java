@@ -61,7 +61,7 @@ public class MyPanel extends JPanel implements Runnable{
         
         while(gameThread != null){
             //1,000,000,000 nanosecond is equal to 1 second
-            long currentTime = System.nanoTime();//returns the current value of the running Java virtual Machines high-resolution time source, in nanoseconds.
+           //long currentTime = System.nanoTime();//returns the current value of the running Java virtual Machines high-resolution time source, in nanoseconds.
 
             update();// Updates information such as character positions
             repaint();// Draws the screen with the updated information

@@ -49,6 +49,18 @@ public class Player extends Entity{
 			down7 = ImageIO.read(getClass().getResourceAsStream("/player1/frontRun7.png"));
 			down8 = ImageIO.read(getClass().getResourceAsStream("/player1/frontRun8.png"));
 
+			up1 = ImageIO.read(getClass().getResourceAsStream("/player1/Up1.png")); 
+			up2 = ImageIO.read(getClass().getResourceAsStream("/player1/Up2.png"));
+			up3 = ImageIO.read(getClass().getResourceAsStream("/player1/Up3.png"));
+
+			left1 = ImageIO.read(getClass().getResourceAsStream("/player1/WalkLeft1.png"));
+			left2 = ImageIO.read(getClass().getResourceAsStream("/player1/WalkLeft2.png"));
+
+			right1 = ImageIO.read(getClass().getResourceAsStream("/player1/WalkRight1.png"));
+			right2 = ImageIO.read(getClass().getResourceAsStream("/player1/WalkRight2.png"));
+
+
+
 		}
 		catch(IOException e){
 			e.printStackTrace();
@@ -120,6 +132,7 @@ public class Player extends Entity{
 		
 		else {
 			spriteCounter++;
+			direction = "none";
 	        if(spriteCounter > 12) {
 	        	if(spriteNum ==1) {
 	        		spriteNum = 2;
@@ -206,7 +219,6 @@ public class Player extends Entity{
 				else if(spriteNum == 3) {
 					image = idle2;
 				}
-				System.out.println(spriteNum);
 				break;
 			}
 			
